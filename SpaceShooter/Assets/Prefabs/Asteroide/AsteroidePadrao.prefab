@@ -100,6 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionAST: {fileID: 8984064229313444561, guid: 1f5d254c5b03cfc49bc264580b1ae582,
     type: 3}
+  popUpDmg: {fileID: 8054181420785933228, guid: 5beb6445c725262459be7cd845297531,
+    type: 3}
 --- !u!50 &668254748737774201
 Rigidbody2D:
   serializedVersion: 4

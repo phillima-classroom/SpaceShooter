@@ -7,7 +7,7 @@ namespace Assets.Scripts.asteroide
     public class AsteroidePadrao : Asteroide
     {
         void Awake() {
-            init(50, 10, 3);
+            init(50, 10, 3,5);
         }
         void Update() {
             movimento();

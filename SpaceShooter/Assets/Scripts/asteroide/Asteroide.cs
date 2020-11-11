@@ -7,7 +7,8 @@ namespace Assets.Scripts.asteroide
     {
         protected float Vida { get; set; }
         protected float Dano { get; set; }
-        protected float Velocidade { get; set; } 
+        protected float Velocidade { get; set; }
+        protected int Ponto { get; set; }
 
         protected Rigidbody2D rb;
         protected AudioSource audioSource;
@@ -17,25 +18,34 @@ namespace Assets.Scripts.asteroide
         [SerializeField]
         protected GameObject explosionAST;
 
+        [SerializeField]
+        protected GameObject popUpDmg;
+
         protected void movimento() {
             rb.velocity = new Vector2(Velocidade*-1, 0);
         }
 
         protected void tomarDano(float danoRecebido) {
             Vida -= danoRecebido;
+            GameObject popUpDmgClone = Instantiate(popUpDmg,transform.position, Quaternion.identity);
+            popUpDmgClone.GetComponentInChildren<MeshRenderer>().sortingLayerName = "VFX";
+            popUpDmgClone.GetComponentInChildren<TextMesh>().text = danoRecebido.ToString();
+            Destroy(popUpDmgClone, 1.5f);
             if(Vida <= 0) {
                 audioSource.PlayOneShot(audioSource.clip);
                 makeInvisible();
                 GameObject animClone = Instantiate(explosionAST,transform);
                 Destroy(gameObject, audioSource.clip.length + 1);
                 Destroy(animClone, animClone.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0).Length);
+                UI.setTexto(this.Ponto);
             }
         }
 
-        protected void init(float vida, float dano, float velocidade) {
+        protected void init(float vida, float dano, float velocidade, int ponto) {
             Dano = dano;
             Vida = vida;
             Velocidade = velocidade;
+            Ponto = ponto;
             rb = GetComponent<Rigidbody2D>();
             audioSource = GetComponent<AudioSource>();
             colliderAst = GetComponent<Collider2D>();
