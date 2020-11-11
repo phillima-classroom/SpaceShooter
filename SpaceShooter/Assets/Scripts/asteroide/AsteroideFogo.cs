@@ -6,7 +6,7 @@ namespace Assets.Scripts.asteroide
     public class AsteroideFogo : Asteroide
     {
         void Awake() {
-           init(60,12,3);
+           init(60,12,3,7);
         }
 
     }
