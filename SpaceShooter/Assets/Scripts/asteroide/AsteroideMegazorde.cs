@@ -4,13 +4,12 @@ using Assets.Scripts.arma.municao;
 
 namespace Assets.Scripts.asteroide
 {
-    public class AsteroidePadrao : Asteroide
+    public class AsteroideMegazorde : Asteroide
     {
 
         private void Awake() {
-            init(50,10,3,5);
+            init(60, 10, 3, 10);
         }
-
         private void Update() {
             movimentacao();
         }
@@ -21,5 +20,6 @@ namespace Assets.Scripts.asteroide
                 tomarDano(municao.Dano);
             }
         }
+
     }
 }

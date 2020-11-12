@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 614376078481788038}
   - component: {fileID: -8771055085566125241}
   - component: {fileID: 4330609175897236956}
-  - component: {fileID: 7981736391320814682}
+  - component: {fileID: -4485965292729523950}
   m_Layer: 0
-  m_Name: AsteroideMegazorde
+  m_Name: AsteroidePadrao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: -1200442345
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1b928740e00721740bc08a09235490a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d573f8843c346ce43be12b10548fb24a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -238,7 +238,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7981736391320814682
+--- !u!114 &-4485965292729523950
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5151143092258045423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21331cca2dfb1b2408783e564bf0b835, type: 3}
+  m_Script: {fileID: 11500000, guid: d2e3b6992dd2e7d43b1295a7e0d1e100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   explosionAST: {fileID: 8984064229313444561, guid: 109ed2ead2a2b3b4b9b477b779c67891,

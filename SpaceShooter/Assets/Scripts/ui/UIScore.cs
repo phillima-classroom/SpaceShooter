@@ -1,40 +1,37 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts;
+using Assets.Scripts.asteroide;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
-using Assets.Scripts.observer;
-using Assets.Scripts.asteroide.fabrica;
 
-namespace Assets.Scripts.ui
+public class UIScore : MonoBehaviour, Observador
 {
-    public class UIScore : MonoBehaviour, Observador
-    {
-        Text textoPonto;
-        int pontuacaoTotal;
 
-        Observavel criadorAST;
+    Text textoPonto;
+    int pontuacaoTotal;
 
-        public void atualiza(object observavel, Eventos evento) {
-            Asteroide ast = (Asteroide)observavel;
-            if (evento == Eventos.AST_CRIADO) {
-                ast.registarObservador(this);
-            }else if (evento == Eventos.AST_DESTRUIDO) {
-                int ponto = ast.Ponto;
-                pontuacaoTotal += ponto;
-                textoPonto.text = pontuacaoTotal.ToString();
+    Observavel criadorAST;
 
-            }
+    public void atualiza(object observavel, Eventos evento) {
+        Asteroide ast = (Asteroide)observavel;
+        if (evento == Eventos.AST_CRIADO) {
+            ast.resgistraObs(this);
+        } else if (evento == Eventos.AST_DESTRUIDO) {
+            int ponto = ast.Ponto;
+            pontuacaoTotal += ponto;
+            textoPonto.text = pontuacaoTotal.ToString();
         }
-
-        private void Start() {
-            textoPonto = GetComponent<Text>();
-            criadorAST = FindObjectOfType<CriadorAsteroide>();
-            print(criadorAST);
-            criadorAST.registarObservador(this);
-            pontuacaoTotal += 0;
-        }
-
-
-
-
     }
+
+    // Start is called before the first frame update
+    void Awake()
+    {
+        textoPonto = GetComponent<Text>();
+        criadorAST = FindObjectOfType<CriadorAsteroide>();
+        criadorAST.resgistraObs(this);
+        pontuacaoTotal = 0;
+    }
+
+    
 }
