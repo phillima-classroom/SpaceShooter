@@ -1,19 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Assets.Scripts.asteroide
 {
-    public abstract class Asteroide : MonoBehaviour
+    public abstract class Asteroide : MonoBehaviour, Observavel
     {
         protected float Vida { get; set; }
         protected float Dano { get; set; }
         protected float Velocidade { get; set; }
-        protected int Ponto { get; set; }
+        public int Ponto { get; set; }
 
         protected Rigidbody2D rb;
         protected AudioSource audioSource;
         protected SpriteRenderer spriteRenderer;
         protected Collider2D colliderAst;
+
+        protected List<Observador> observadores;
 
         [SerializeField]
         protected GameObject explosionAST;
@@ -37,7 +40,7 @@ namespace Assets.Scripts.asteroide
                 GameObject animClone = Instantiate(explosionAST,transform);
                 Destroy(gameObject, audioSource.clip.length + 1);
                 Destroy(animClone, animClone.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0).Length);
-                UI.setTexto(this.Ponto);
+                notify(this, Eventos.AST_DESTRUIDO);
             }
         }
 
@@ -50,11 +53,28 @@ namespace Assets.Scripts.asteroide
             audioSource = GetComponent<AudioSource>();
             colliderAst = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            observadores = new List<Observador>();
         }
 
         private void makeInvisible() {
             spriteRenderer.enabled = false;
             colliderAst.enabled = false;
         }
+
+        //Observavel
+        public void notify(object observavel, Eventos evento) {
+            foreach (var observador in observadores) {
+                observador.atualiza(this, evento);
+            }
+        }
+
+        public void registraObservador(Observador observador) {
+            observadores.Add(observador);
+        }
+
+        public void cancelaObservador(Observador observador) {
+            observadores.Add(observador);
+        }
+        //Fim observavel
     }
 }
