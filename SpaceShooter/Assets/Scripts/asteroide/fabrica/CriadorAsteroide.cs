@@ -6,11 +6,13 @@ using Random = UnityEngine.Random;
 
 namespace Assets.Scripts.asteroide.fabrica
 {
-    public class CriadorAsteroide : MonoBehaviour
+    public class CriadorAsteroide : MonoBehaviour, Observavel
     {
 
         [SerializeField]
         List<Asteroide> asteroides;
+
+        List<Observador> observadores;
 
         List<Vector3> spawnPoints;
         int spawnPointsNum;
@@ -19,6 +21,9 @@ namespace Assets.Scripts.asteroide.fabrica
         List<int> ordemSpawn;
 
         private void Awake() {
+
+            observadores = new List<Observador>();
+
             spawnPoints = new List<Vector3>();
             foreach (Transform spawnPoint in transform) {
                 spawnPoints.Add(spawnPoint.position);
@@ -29,6 +34,7 @@ namespace Assets.Scripts.asteroide.fabrica
         public Asteroide criaAsteroide() {
             int pos = definirPosicao();
             Asteroide ast = Instantiate(asteroides[Random.Range(0, asteroides.Count)], spawnPoints[pos], Quaternion.identity);
+            notify(ast, Eventos.AST_CRIADO);
             return ast;
         }
 
@@ -57,5 +63,22 @@ namespace Assets.Scripts.asteroide.fabrica
             }
             return new List<int>(result);
         }
+
+        //Observavel
+        
+        public void cancelaObservador(Observador observador) {
+            observadores.Remove(observador);
+        }
+        
+        public void notify(object observavel, Eventos evento) {
+            foreach (var observador in observadores) {
+                observador.atualiza(observavel, evento);
+            }
+        }
+
+        public void registraObservador(Observador observador) {
+            observadores.Add(observador);
+        }
+        //Fim observavel
     }
 }

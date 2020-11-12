@@ -8,6 +8,8 @@ namespace Assets.Scripts.powerup.fabrica
     public class CriadorPUArma : MonoBehaviour
     {
 
+        
+
         [SerializeField]
         List<PowerUpArma> puArmas;
 
@@ -20,6 +22,9 @@ namespace Assets.Scripts.powerup.fabrica
         int contador = 0;
 
         private void Awake() {
+
+            
+
             spawnPoints = new List<Vector3>();
             foreach (Transform spawnPoint in transform) {
                 spawnPoints.Add(spawnPoint.position);
@@ -61,5 +66,7 @@ namespace Assets.Scripts.powerup.fabrica
             }
             return new List<int>(result);
         }
+
+        
     }
 }
