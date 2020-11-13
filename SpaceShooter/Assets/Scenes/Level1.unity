@@ -776,6 +776,7 @@ MonoBehaviour:
   puArmas:
   - {fileID: 9151502011194852943, guid: eb812227cea711f4290923d3abb153b0, type: 3}
   - {fileID: 2459357457242708540, guid: dc7fb53b748578b4b913c6147a904316, type: 3}
+  - {fileID: 9151502011194852943, guid: 33fbad427fe8e8042b3a6bc45d4dedae, type: 3}
 --- !u!4 &1353674272
 Transform:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1447262065296514641}
   - component: {fileID: 9151502011194852943}
   m_Layer: 0
-  m_Name: ArmaFogoPU_Duplo
+  m_Name: ArmaTriplo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -694863781
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2ea6a71bf6505e14c8b671d6f0e2cb6a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e6d04362b2c6d64f8c3702e1398e3ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,7 +123,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.95, y: 2.07}
+    oldSize: {x: 2.048, y: 2.048}
     newSize: {x: 1.8, y: 1.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -240,4 +240,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54e253856ad37b43a389343796938e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arma: {fileID: -5839881544978379064, guid: 1827ceb135306ce46892aa940aae4ce8, type: 3}
+  arma: {fileID: 3805038983217858502, guid: 468b8f90d7fc7cb4a92149c848228664, type: 3}
