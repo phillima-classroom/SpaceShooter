@@ -1,30 +1,30 @@
-﻿using Assets.Scripts.asteroide;
-using Assets.Scripts.asteroide.fabrica;
-using Assets.Scripts.powerup.fabrica;
+﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+namespace Assets.Scripts
 {
-    [SerializeField]
-    CriadorAsteroide criadorAsteroide;
+    public class LevelManager : MonoBehaviour
+    {
 
-    [SerializeField]
-    CriadorPUArma criadorPowerUpArma;
+        [SerializeField]
+        FabricaAleatoria criadorPUArma, criadorAst;
 
-    private void Awake() {
-        criadorAsteroide = Instantiate(criadorAsteroide);
-        InvokeRepeating("criaAsteroide", 0.0f, 2.0f);
-        InvokeRepeating("criaPUArma", 2.0f, 4.0f);
-    }
-    // Update is called once per frame
-    
-    void criaAsteroide() {
-        criadorAsteroide.criaAsteroide();
-    }
 
-    void criaPUArma() {
-        criadorPowerUpArma.criaPUArma();
+        // Use this for initialization
+        void Awake() {
+            InvokeRepeating("buscaPUArma", 2.0f, 3.0f);
+            InvokeRepeating("buscaAsteroide", 0.0f, 2.0f);
+        }
+               
+
+        void buscaAsteroide() {
+            //Delegando para a fabrica
+            criadorAst.criaInstancia();
+        }
+
+        void buscaPUArma() {
+            //Delegando para a fabrica
+            criadorPUArma.criaInstancia();
+        }
     }
 }

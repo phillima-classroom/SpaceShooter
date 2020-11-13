@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4860172066434340599}
-  - component: {fileID: 7890664485160631773}
   - component: {fileID: 8322422827296738994}
+  - component: {fileID: 639214192065044840}
   m_Layer: 0
   m_Name: ArmaHeavyMachine
   m_TagString: Untagged
@@ -32,19 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7890664485160631773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5164716321332453645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc91bd68f8687b743bac5108d30dc9eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  municao: {fileID: 1035028721565039771, guid: 85c719e311b5b494d9e7ad566eec0b4f, type: 3}
 --- !u!82 &8322422827296738994
 AudioSource:
   m_ObjectHideFlags: 0
@@ -141,3 +128,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &639214192065044840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164716321332453645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e104f61352b93cc4fb0efb436901d27f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  municao: {fileID: -8532441690240190701, guid: 917458bc177b8fd46a85e28140fc94b2,
+    type: 3}

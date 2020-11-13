@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ponta_Nave
   - UpperShooter
   - LowerShooter
+  - Ponta_Nave
+  - Achiev_Spawner
   layers:
   - Default
   - TransparentFX
@@ -45,14 +46,14 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 2433504941
+    uniqueID: 3955289627
     locked: 0
   - name: Foreground
-    uniqueID: 3188167591
+    uniqueID: 3094524951
     locked: 0
   - name: Player
-    uniqueID: 2196934077
+    uniqueID: 3600103515
     locked: 0
   - name: VFX
-    uniqueID: 3307351965
+    uniqueID: 64483489
     locked: 0

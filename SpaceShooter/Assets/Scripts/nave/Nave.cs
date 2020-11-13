@@ -7,26 +7,26 @@ public class Nave : MonoBehaviour
 {
     [SerializeField]
     Arma arma;
-    
-    public float Velocidade { get; set; } = 4;
+
+    public float Velocidade { get; set; } = 4.0f;
 
     private void Awake() {
         arma = Instantiate(arma,transform);
     }
-    // Update is called once per frame
-    void Update() 
-    {
+
+    private void Update() {
         movimentacao();
         atirar();
     }
 
     void movimentacao() {
         if (Input.GetKey(KeyCode.S)) {
-            transform.Translate(new Vector2(0,Velocidade*-1*Time.deltaTime));
+            transform.Translate(new Vector2(0, Velocidade * -1 * Time.deltaTime));
         } else if (Input.GetKey(KeyCode.W)) {
-            transform.Translate(new Vector2(0,Velocidade*1*Time.deltaTime));
+            transform.Translate(new Vector2(0, Velocidade * 1 * Time.deltaTime));
         }
     }
+
     void atirar() {
         if (Input.GetKey(KeyCode.Space)) {
             arma.atirar();
@@ -37,4 +37,6 @@ public class Nave : MonoBehaviour
         Destroy(this.arma.gameObject);
         this.arma = arma;
     }
+
+
 }

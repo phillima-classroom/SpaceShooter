@@ -1,26 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Assets.Scripts.municao;
-using System;
+using Assets.Scripts.arma.municao;
 
 namespace Assets.Scripts.arma
 {
-    public abstract class Arma : MonoBehaviour {
+    public abstract class Arma : MonoBehaviour
+    {
         [SerializeField]
         protected Municao municao;
 
         protected AudioSource audioSource;
 
         public float FireRate { get; set; }
-        public float NextFire { get; set; } = 0.0f;
+        public float NextFire { get; set; }
 
-        public abstract void atirar();
-        protected void init(float fireRate){
+        protected void init(float fireRate) {
             FireRate = fireRate;
-            audioSource = GetComponent<AudioSource>();
             NextFire = 0.0f;
+            audioSource = GetComponent<AudioSource>();
         }
 
-    }
+        public abstract void atirar();
         
+    }
 }

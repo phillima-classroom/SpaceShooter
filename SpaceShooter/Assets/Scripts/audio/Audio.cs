@@ -6,7 +6,6 @@ public class Audio : MonoBehaviour
 {
     AudioSource audioSource;
 
-
     void Awake() {
         
         if (FindObjectsOfType<Audio>().Length>1) {

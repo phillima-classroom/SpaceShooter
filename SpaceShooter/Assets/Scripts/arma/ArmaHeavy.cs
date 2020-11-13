@@ -7,13 +7,16 @@ namespace Assets.Scripts.arma
     {
 
         private void Awake() {
-            init(0.25f);
+            init(0.4f);
         }
+
         public override void atirar() {
             if (Time.time > NextFire) {
                 NextFire = FireRate + Time.time;
-                Vector3 pos = GameObject.FindGameObjectWithTag("Ponta_Nave").transform.position;
-                Instantiate(municao, pos, Quaternion.identity);
+                Vector3 posUpper = GameObject.FindGameObjectWithTag("UpperShooter").transform.position;
+                Vector3 posLower = GameObject.FindGameObjectWithTag("LowerShooter").transform.position;
+                Instantiate(municao, posUpper, Quaternion.identity);
+                Instantiate(municao, posLower, Quaternion.identity);
                 audioSource.PlayOneShot(audioSource.clip);
             }
         }

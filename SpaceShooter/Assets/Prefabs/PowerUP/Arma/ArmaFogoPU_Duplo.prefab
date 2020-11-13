@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2108270835917231052}
   - component: {fileID: 354535887535532225}
-  - component: {fileID: 7586368952084360008}
   - component: {fileID: 7269394373661546595}
   - component: {fileID: 5208756567566295126}
   - component: {fileID: 1447262065296514641}
+  - component: {fileID: 9151502011194852943}
   m_Layer: 0
   m_Name: ArmaFogoPU_Duplo
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443440738455110915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.067, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,10 +71,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1106799705
-  m_SortingLayer: 2
+  m_SortingLayerID: -694863781
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab3dcddd44ea35d489d8251fd4515a91, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ea6a71bf6505e14c8b671d6f0e2cb6a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,19 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7586368952084360008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443440738455110915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a46a8b9d68373b40929f625e564bc6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arma: {fileID: 966093689386627573, guid: 7177ef8da60310e4fbd3846655fa8393, type: 3}
 --- !u!50 &7269394373661546595
 Rigidbody2D:
   serializedVersion: 4
@@ -136,7 +123,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8, y: 1.8}
+    oldSize: {x: 1.95, y: 2.07}
     newSize: {x: 1.8, y: 1.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -241,3 +228,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9151502011194852943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443440738455110915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54e253856ad37b43a389343796938e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arma: {fileID: -5839881544978379064, guid: 8901a69be10e7d1469d1ef683af6e690, type: 3}

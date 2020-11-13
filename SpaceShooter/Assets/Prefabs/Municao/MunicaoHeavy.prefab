@@ -4729,7 +4729,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1106799705
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
@@ -9483,7 +9483,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1106799705
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
@@ -14237,7 +14237,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1106799705
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
@@ -14272,7 +14272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3164953785598468591}
   - component: {fileID: 3405751035637745121}
-  - component: {fileID: 1035028721565039771}
+  - component: {fileID: -8532441690240190701}
   m_Layer: 0
   m_Name: MunicaoHeavy
   m_TagString: Untagged
@@ -14320,7 +14320,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &1035028721565039771
+--- !u!114 &-8532441690240190701
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14329,7 +14329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7561914864554789218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e86142078170c0c49bb91383ad4866cc, type: 3}
+  m_Script: {fileID: 11500000, guid: c8d9462869d36f8418047cdc362cdefd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8049142206026971141
@@ -19061,7 +19061,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1106799705
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
@@ -19154,8 +19154,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1106799705
-  m_SortingLayer: 2
+  m_SortingLayerID: 64483489
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 507af15929b53734da3f542f765d884a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

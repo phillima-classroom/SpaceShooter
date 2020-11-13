@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2108270835917231052}
   - component: {fileID: 354535887535532225}
-  - component: {fileID: 7586368952084360008}
   - component: {fileID: 7269394373661546595}
   - component: {fileID: 5208756567566295126}
   - component: {fileID: 1871888578146102498}
+  - component: {fileID: 2459357457242708540}
   m_Layer: 0
   m_Name: ArmaHeavyMachine
   m_TagString: Untagged
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1106799705
-  m_SortingLayer: 2
+  m_SortingLayerID: -694863781
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ad8f158ae8bd17f49b342609dcd715cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -85,19 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7586368952084360008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443440738455110915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a46a8b9d68373b40929f625e564bc6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arma: {fileID: 7890664485160631773, guid: 794a9ce2567c4db428557a43025c5b6c, type: 3}
 --- !u!50 &7269394373661546595
 Rigidbody2D:
   serializedVersion: 4
@@ -241,3 +228,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2459357457242708540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443440738455110915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54e253856ad37b43a389343796938e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arma: {fileID: 639214192065044840, guid: af242110422f3934cabe43f4b8ccf8c7, type: 3}

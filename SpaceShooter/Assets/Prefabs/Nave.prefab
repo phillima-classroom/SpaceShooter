@@ -4728,8 +4728,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2098033219
-  m_SortingLayer: 3
+  m_SortingLayerID: 64483489
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -4851,7 +4851,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2098033219
+  m_SortingLayerID: -694863781
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f922f037fb86318478a7444d0407c483, type: 3}
@@ -4874,7 +4874,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5643734534895400659}
-  - component: {fileID: 2372437033559810434}
   - component: {fileID: 815183988674949701}
   m_Layer: 0
   m_Name: Nave
@@ -4902,19 +4901,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2372437033559810434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5643734534895400657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38123beaaf28a2841aa15b2a12709f3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arma: {fileID: 1067123215308874412, guid: e0feadc05690e314f8fe3422b6e81ab6, type: 3}
 --- !u!70 &815183988674949701
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

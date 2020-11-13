@@ -5,7 +5,8 @@ namespace Assets.Scripts.arma
 {
     public class ArmaPadraoDuplo : Arma
     {
-        void Awake() {
+
+        private void Awake() {
             init(0.5f);
         }
 
@@ -19,6 +20,5 @@ namespace Assets.Scripts.arma
                 audioSource.PlayOneShot(audioSource.clip);
             }
         }
-      
     }
 }
