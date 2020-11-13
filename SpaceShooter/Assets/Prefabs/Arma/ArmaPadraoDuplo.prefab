@@ -141,3 +141,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   municao: {fileID: 5238363535909257201, guid: b26ad78a6bfda0045858705cc7ab15c1, type: 3}
+  fireRate: 0.5

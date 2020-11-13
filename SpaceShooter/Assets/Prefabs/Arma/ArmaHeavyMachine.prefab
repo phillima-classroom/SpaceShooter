@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4860172066434340599}
   - component: {fileID: 8322422827296738994}
-  - component: {fileID: 639214192065044840}
+  - component: {fileID: 4836699697950802952}
   m_Layer: 0
   m_Name: ArmaHeavyMachine
   m_TagString: Untagged
@@ -128,7 +128,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &639214192065044840
+--- !u!114 &4836699697950802952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,8 +137,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5164716321332453645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e104f61352b93cc4fb0efb436901d27f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d1a06930a19b1145aba152a9c256193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   municao: {fileID: -8532441690240190701, guid: 917458bc177b8fd46a85e28140fc94b2,
     type: 3}
+  fireRate: 0.3

@@ -12,7 +12,7 @@ namespace Assets.Scripts.arma
 
         public override void atirar() {
             if (Time.time > NextFire) {
-                NextFire = FireRate + Time.time;
+                NextFire = fireRate + Time.time;
                 Vector3 posUpper = GameObject.FindGameObjectWithTag("UpperShooter").transform.position;
                 Vector3 posLower = GameObject.FindGameObjectWithTag("LowerShooter").transform.position;
                 Instantiate(municao, posUpper, Quaternion.identity);

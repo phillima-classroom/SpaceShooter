@@ -12,7 +12,7 @@ namespace Assets.Scripts.arma
 
         public override void atirar() {
             if(Time.time > NextFire) {
-                NextFire = FireRate + Time.time;
+                NextFire = fireRate + Time.time;
                 Vector3 pos = GameObject.FindGameObjectWithTag("Ponta_Nave").transform.position;
                 Instantiate(municao, pos, Quaternion.identity);
                 audioSource.PlayOneShot(audioSource.clip);

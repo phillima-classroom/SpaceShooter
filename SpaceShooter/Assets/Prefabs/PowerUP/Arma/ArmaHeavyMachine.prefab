@@ -240,4 +240,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54e253856ad37b43a389343796938e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arma: {fileID: 639214192065044840, guid: af242110422f3934cabe43f4b8ccf8c7, type: 3}
+  arma: {fileID: 4836699697950802952, guid: af242110422f3934cabe43f4b8ccf8c7, type: 3}

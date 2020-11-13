@@ -11,11 +11,12 @@ namespace Assets.Scripts.arma
 
         protected AudioSource audioSource;
 
-        public float FireRate { get; set; }
+        [SerializeField]
+        protected float fireRate;
         public float NextFire { get; set; }
 
         protected void init(float fireRate) {
-            FireRate = fireRate;
+            this.fireRate = fireRate;
             NextFire = 0.0f;
             audioSource = GetComponent<AudioSource>();
         }
