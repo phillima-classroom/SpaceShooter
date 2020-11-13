@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.observer;
 
 namespace Assets.Scripts.asteroide
 {
@@ -27,9 +28,7 @@ namespace Assets.Scripts.asteroide
                 spawnPoints.Add(spawnPoint.position);
             }
             spawnPointsNum = spawnPoints.Count;
-
             observadores = new List<Observador>();
-                       
         }
 
 
@@ -40,6 +39,7 @@ namespace Assets.Scripts.asteroide
             }
         }
         public void resgistraObs(Observador obs) {
+            print(obs);
             print(observadores);
             observadores.Add(obs);
         }

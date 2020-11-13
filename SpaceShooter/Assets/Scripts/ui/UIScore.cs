@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts;
 using Assets.Scripts.asteroide;
+using Assets.Scripts.observer;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,7 +26,7 @@ public class UIScore : MonoBehaviour, Observador
     }
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         textoPonto = GetComponent<Text>();
         criadorAST = FindObjectOfType<CriadorAsteroide>();

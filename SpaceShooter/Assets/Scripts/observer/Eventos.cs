@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.observer
 {
     public enum Eventos
     {

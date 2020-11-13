@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts;
+using Assets.Scripts.observer;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
