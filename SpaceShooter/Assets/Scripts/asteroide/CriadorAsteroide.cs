@@ -39,9 +39,7 @@ namespace Assets.Scripts.asteroide
             }
         }
         public void resgistraObs(Observador obs) {
-            print(obs);
-            print(observadores);
-            observadores.Add(obs);
+           observadores.Add(obs);
         }
         public void cancelaRegistro(Observador obs) {
                 observadores.Remove(obs);
