@@ -6,24 +6,25 @@ env:
   UNITY_LICENSE: ${{secrets.UNITY_LICENSE}}
 
 jobs:
-  name : space-shooter-build
-  runs-on: ubuntu-latest
+  build:
+    name : space-shooter-build
+    runs-on: ubuntu-latest
 
-  steps:
-    # Checkout
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        lfs: true
-    
-    # Cache
-    - uses: actions/cache@v1.1.0
-      with:
-        path: SpaceShooter/Library
-        key: SpaceShooter/Library
+    steps:
+      # Checkout
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+      
+      # Cache
+      - uses: actions/cache@v1.1.0
+        with:
+          path: SpaceShooter/Library
+          key: SpaceShooter/Library
 
-    # Test
-    - name: Tests
-      uses: webbertakken/unity-test-runner@v1.3
-      with:
-        unityVersion: 2019.4.14f1
+      # Test
+      - name: Tests
+        uses: webbertakken/unity-test-runner@v1.3
+        with:
+          unityVersion: 2019.4.14f1
