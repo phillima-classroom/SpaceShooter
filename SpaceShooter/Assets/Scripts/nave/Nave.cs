@@ -38,5 +38,4 @@ public class Nave : MonoBehaviour
         this.arma = arma;
     }
 
-
 }
