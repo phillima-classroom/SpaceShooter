@@ -27,7 +27,7 @@ jobs:
       - name: Tests
         uses: webbertakken/unity-test-runner@v1.7
         with:
-          path: SpaceShooter/Assets
+          projectPath: /github/workspace/SpaceShooter
           unityVersion: 2019.4.14f1
 
       #Ouptput
