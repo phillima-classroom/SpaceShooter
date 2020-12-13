@@ -27,5 +27,11 @@ jobs:
       - name: Tests
         uses: webbertakken/unity-test-runner@v1.3
         with:
-          path: SpaceShooter/
+          path: SpaceShooter
           unityVersion: 2019.4.14f1
+
+      #Ouptput
+      - uses: actions/upload-artifact@v1
+        with:
+          name: Build-Test
+          path: build-Test
