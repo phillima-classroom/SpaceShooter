@@ -22,6 +22,6 @@ namespace Assets.Scripts.arma
         }
 
         public abstract void atirar();
-        
+
     }
 }
