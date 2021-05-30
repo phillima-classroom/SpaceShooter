@@ -25,10 +25,10 @@ jobs:
 
       # Test
       - name: Tests
-        uses: webbertakken/unity-test-runner@v1.7
+        uses: webbertakken/unity-test-runner@v2
         with:
           projectPath: SpaceShooter
-          unityVersion: 2019.4.14f1
+          unityVersion: 2020.3.3f1
 
       #Ouptput
       - uses: actions/upload-artifact@v1
