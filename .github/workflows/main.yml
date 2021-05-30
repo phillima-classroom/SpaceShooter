@@ -33,7 +33,7 @@ jobs:
         with:
           projectPath: SpaceShooter
           unityVersion: 2020.3.3f1
-          testeMode: ${{ matrix.testMode }}
+          testMode: ${{ matrix.testMode }}
 
       #Ouptput
       - uses: actions/upload-artifact@v1
