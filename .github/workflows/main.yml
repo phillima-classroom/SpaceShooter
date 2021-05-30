@@ -6,9 +6,13 @@ env:
   UNITY_LICENSE: ${{secrets.UNITY_LICENSE}}
 
 jobs:
-  build:
-    name : space-shooter-build
+  testAllModes:
+    name : space-shooter-test
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        testMode:
+          - editmode
 
     steps:
       # Checkout
@@ -18,7 +22,7 @@ jobs:
           lfs: true
       
       # Cache
-      - uses: actions/cache@v1.1.0
+      - uses: actions/cache@v2
         with:
           path: SpaceShooter/Library
           key: SpaceShooter/Library
@@ -29,6 +33,7 @@ jobs:
         with:
           projectPath: SpaceShooter
           unityVersion: 2020.3.3f1
+          testeMode: ${{ matrix.testMode }}
 
       #Ouptput
       - uses: actions/upload-artifact@v1
